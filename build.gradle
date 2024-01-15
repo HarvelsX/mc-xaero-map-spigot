@@ -37,6 +37,10 @@ spigot {
     }
 }
 
+tasks.named("generateSpigotDescription") {
+    properties.put("folia-supported", true)
+}
+
 shadowJar {
     //archiveClassifier.set("")
     relocate 'org.bstats', 'dev.chaws.xaero.map.spigot'
